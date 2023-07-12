@@ -78,11 +78,11 @@ export default function Home() {
                         <span className="text-black text-opacity-50 text-xl font-medium">нашей компанией</span>
                     </div>
                     <div className={'p-[15px] flex items-center flex-wrap gap-10 justify-center'}>
-                        <video controls src={"/assets/videos/present.mp4"} className={'w-[500px] h-[500px] rounded-2xl'}/>
-                        <video controls src={"/assets/videos/present2.mp4"} className={'w-[500px] h-[500px] rounded-2xl'}/>
-                        <video controls src={"/assets/videos/present3.mp4"} className={'w-[500px] h-[500px] rounded-2xl'}/>
-                        <video controls src={"/assets/videos/present4.mp4"} className={'w-[500px] h-[500px] rounded-2xl'}/>
-                        <video controls src={"/assets/videos/present5.mp4"} className={'w-[500px] h-[500px] rounded-2xl'}/>
+                        <video controls src={"/assets/videos/present.mp4"} className={'desktop:w-[500px] object-cover desktop:h-[500px] rounded-2xl'} />
+                        <video controls src={"/assets/videos/present2.mp4"} className={'desktop:w-[500px] object-cover desktop:h-[500px] rounded-2xl'}/>
+                        <video controls src={"/assets/videos/present3.mp4"} className={'desktop:w-[500px] object-cover desktop:h-[500px] rounded-2xl'}/>
+                        <video controls src={"/assets/videos/present4.mp4"} className={'desktop:w-[500px] object-cover desktop:h-[500px] rounded-2xl'}/>
+                        <video controls src={"/assets/videos/present5.mp4"} className={'desktop:w-[500px] object-cover desktop:h-[500px] rounded-2xl'}/>
                     </div>
                 </div>
             </div>
