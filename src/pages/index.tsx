@@ -8,6 +8,7 @@ import chat from '../../public/assets/chat.svg'
 import Services from "@/components/services";
 import OurWorks from "@/components/ourWorks";
 import Head from "next/head";
+import Advantages from "@/components/advantages";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -83,6 +84,7 @@ export default function Home() {
                 </div>
                 <OurWorks/>
                 <Services/>
+                <Advantages/>
             </div>
         </Layout>
     )

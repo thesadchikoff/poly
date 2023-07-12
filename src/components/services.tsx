@@ -21,7 +21,7 @@ const Services = () => {
                 {/*  Services board start  */}
                 <div className={'w-full bg-black bg-opacity-50 p-[40px] flex flex-col gap-[42px]'}>
                     <h1 className={'text-white text-[35px] font-medium'}>Полусухая стяжка пола</h1>
-                    <p className={'text-white text-opacity-60 text-xl font-normal'}>
+                    <p className={'text-white text-opacity-60 desktop:text-xl mobile:text-md font-normal'}>
                         Квалифицированная строительная бригада выполнит полусухую стяжку пола.
                         <br/>
                         Сделаем ровную стяжку за 8 часов без трещин и неровностей,
