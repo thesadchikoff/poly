@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Link from "next/link";
+// @ts-ignore
 import {Modal} from "next-modal";
 import {AiOutlineWhatsApp} from 'react-icons/ai'
 import {HiOutlineMail} from 'react-icons/hi'
@@ -35,7 +36,7 @@ const Services = () => {
                         <Modal.Body className='flex items-center justify-center gap-14 sans font-400 text-15px text-gray fade-in animation-duration-800ms animation-forwards'>
                             <Link target={"_blank"} href={'https://api.whatsapp.com/send/?phone=79202446677&text=Здравствуйте!+Хотел+бы+обсудить+с+вами+проект'} className={'flex flex-col justify-center items-center w-max gap-2'}>
                                 <AiOutlineWhatsApp className={'text-[45px] text-green-600'}/>
-                                <span>What's App</span>
+                                <span>Whats App</span>
                             </Link>
                             <Link target={"_blank"} href={"mailto:sevan.karapetyan.1987@mail.ru"} className={'flex flex-col justify-center items-center w-max gap-2'}>
                                 <HiOutlineMail className={'text-[45px] text-slate-400'}/>
