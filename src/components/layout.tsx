@@ -5,7 +5,7 @@ import TopBanner from "@/components/topBanner";
 
 
 interface ILayout {
-    children: React.JSX.Element
+    children: React.ReactNode
 }
 const Layout = ({children}: ILayout) => {
     return (

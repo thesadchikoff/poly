@@ -5,7 +5,6 @@ import check from '../../public/assets/check.svg'
 import camera from '../../public/assets/camera.svg'
 import hammer from '../../public/assets/hammer.svg'
 import chat from '../../public/assets/chat.svg'
-import Link from "next/link";
 import Services from "@/components/services";
 import OurWorks from "@/components/ourWorks";
 import Head from "next/head";
