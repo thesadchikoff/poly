@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Link from "next/link";
 import {AiOutlineWhatsApp} from 'react-icons/ai'
 import {HiOutlineMail} from 'react-icons/hi'
-import {Modal} from "@mui/material";
+import Modal from '@mui/material/Modal';
 
 const Services = () => {
     const [open, setOpen] = React.useState(false);
