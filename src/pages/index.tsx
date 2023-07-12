@@ -27,7 +27,7 @@ export default function Home() {
                         <span className={'uppercase font-bold text-[30px]'}>Полусухая стяжка</span>
                         <span
                             className="text-black text-opacity-60 text-[25px] font-normal uppercase desktop:w-[730px] mobile:w-full tablet:w-full text-center">Квалифицированная строительная бригада выполнит полусухую стяжку пола в Липецке и Липецкой области</span>
-                        <span className="mt-[40px] desktop:w-[700px] text-center text-black text-opacity-50 text-base font-normal mobile:w-full tablet:w-full">Сделаем ровную стяжку за 8 часов Сделаем ровную стяжку за 8 часов без трещин и неровностей,
+                        <span className="mt-[40px] desktop:w-[700px] text-center text-black text-opacity-50 text-base font-normal mobile:w-full tablet:w-full">Сделаем ровную стяжку за 8 часов без трещин и неровностей,
                       благодаря уплотнению смеси затирочной машиной.
                       Это позволяет избежать пустот в стяжке.
                       Полусухая стяжка качественнее традиционной.

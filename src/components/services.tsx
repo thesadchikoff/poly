@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import Link from "next/link";
-// @ts-ignore
-import {Modal} from "next-modal";
 import {AiOutlineWhatsApp} from 'react-icons/ai'
 import {HiOutlineMail} from 'react-icons/hi'
+import {Modal} from "@mui/material";
+
 const Services = () => {
-    const [toggleModal, setToggleModal] = useState(false)
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
     return (
         <div className={"services mobile:h-max desktop:h-screen"}>
             <div className={'w-full mobile:h-max desktop:h-full bg-black bg-opacity-70 mobile:px-[15px] desktop:px-[130px] mobile:py-[30px] desktop:py-[80px] flex flex-col mobile:gap-[60px] desktop:gap-[160px]'}>
@@ -28,21 +30,28 @@ const Services = () => {
                         Полусухая стяжка качественнее традиционной.
                         Является идеальным основанием под плитку, паркет, линолеум, ламинат, полимер, пробку.
                     </p>
-                    <button onClick={() => setToggleModal((prev) => !prev)} className={'px-[25px] py-[15px] bg-amber-500 w-max text-white text-xl font-semibold'}>Обсудить проект</button>
-                    <Modal toggle={toggleModal} setToggle={setToggleModal}>
-                        <Modal.Header className='sans font-900 text-30px fade-in-left animation-duration-500ms animation-forwards'>
-                            <h3>👋 Выберите удобный вариант для обсуждения</h3>
-                        </Modal.Header>
-                        <Modal.Body className='flex items-center justify-center gap-14 sans font-400 text-15px text-gray fade-in animation-duration-800ms animation-forwards'>
-                            <Link target={"_blank"} href={'https://api.whatsapp.com/send/?phone=79202446677&text=Здравствуйте!+Хотел+бы+обсудить+с+вами+проект'} className={'flex flex-col justify-center items-center w-max gap-2'}>
-                                <AiOutlineWhatsApp className={'text-[45px] text-green-600'}/>
-                                <span>Whats App</span>
-                            </Link>
-                            <Link target={"_blank"} href={"mailto:sevan.karapetyan.1987@mail.ru"} className={'flex flex-col justify-center items-center w-max gap-2'}>
-                                <HiOutlineMail className={'text-[45px] text-slate-400'}/>
-                                <span>Почта</span>
-                            </Link>
-                        </Modal.Body>
+                    <button onClick={handleOpen} className={'px-[25px] py-[15px] bg-amber-500 w-max text-white text-xl font-semibold'}>Обсудить проект</button>
+                    <Modal
+                        className={'flex items-center justify-center'}
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                    >
+                            <div className={'p-10 bg-white flex flex-col relative gap-10 rounded'}>
+                                <span onClick={handleClose} className={'text-2xl font-medium absolute px-[12px] py-[2px] cursor-pointer bg-slate-200 right-[5px] top-[5px] rounded-full'}>&times;</span>
+                                <h1>Выберите удобный способ обсуждения</h1>
+                                <div className={'flex gap-10 w-full justify-center'}>
+                                    <Link target={"_blank"} href={'https://api.whatsapp.com/send/?phone=79202446677&text=Здравствуйте!+Хотел+бы+обсудить+с+вами+проект'} className={'flex flex-col justify-center items-center w-max gap-2'}>
+                                        <AiOutlineWhatsApp className={'text-[45px] text-green-600'}/>
+                                        <span>Whats App</span>
+                                    </Link>
+                                    <Link target={"_blank"} href={"mailto:sevan.karapetyan.1987@mail.ru"} className={'flex flex-col justify-center items-center w-max gap-2'}>
+                                        <HiOutlineMail className={'text-[45px] text-slate-400'}/>
+                                        <span>Почта</span>
+                                    </Link>
+                                </div>
+                            </div>
                     </Modal>
                 </div>
             </div>
