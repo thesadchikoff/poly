@@ -3,11 +3,11 @@ const config = {
     navLinks: [
         {
             label: 'Видео',
-            url: '/videos'
+            url: '#our-works'
         },
         {
             label: 'Портфолио',
-            url: '/portfolio'
+            url: '#section-0'
         },{
             label: 'Отзывы',
             url: '/reviews'

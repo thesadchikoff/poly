@@ -15,7 +15,7 @@ const Footer = () => {
                 <span>
                     Разработка и поддержка:
                 </span>
-                <Link className={'font-bold flex gap-[2px]'} href={'https://sadchikoff.vercel.app/'}>sadchikov <pattern className={'text-red-500'}>dev</pattern>.</Link>
+                <a className={'font-bold flex gap-[2px]'} href={'https://sadchikoff.vercel.app/'}>sadchikov <pattern className={'text-red-500'}>dev</pattern>.</a>
             </div>
         </div>
     );

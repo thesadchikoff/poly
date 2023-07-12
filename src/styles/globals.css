@@ -10,20 +10,34 @@ html {
   scroll-behavior: smooth;
 }
 
+#our-works {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
+  scroll-behavior: smooth;
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
 }
 
 #__next {
+  scroll-behavior: smooth;
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
 }
 
 .bg-image {
   width: 100%;
   background-image: url("../../public/assets/front.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services {
+  width: 100%;
+  /*height: 100vh;*/
+  background-image: url("../../public/assets/services.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }

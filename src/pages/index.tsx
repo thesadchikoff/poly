@@ -5,6 +5,9 @@ import check from '../../public/assets/check.svg'
 import camera from '../../public/assets/camera.svg'
 import hammer from '../../public/assets/hammer.svg'
 import chat from '../../public/assets/chat.svg'
+import Link from "next/link";
+import Services from "@/components/services";
+import OurWorks from "@/components/ourWorks";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -13,6 +16,7 @@ export default function Home() {
         <Layout>
             <div className={'w-full h-full flex flex-col'}>
                 <div
+                    id={'section-0'}
                     className="bg-image w-full h-full -z-10 pt-[100px] px-[15px] flex flex-col justify-between desktop:gap-20 mobile:gap-20 tablet:gap-20">
                     <div className={'flex flex-col w-full justify-center items-center'}>
                         <span className={'uppercase font-bold text-[30px]'}>Полусухая стяжка</span>
@@ -72,29 +76,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className={'w-full h-full flex flex-col gap-10'}>
-                    <div className={'flex justify-center items-center flex-col'}>
-                        <h1 className="text-black text-3xl font-medium">Выполнение работ</h1>
-                        <span className="text-black text-opacity-50 text-xl font-medium">нашей компанией</span>
-                    </div>
-                    <div className={'p-[15px] flex items-center flex-wrap gap-10 justify-center'}>
-                        <video controls poster={'https://myneuralnetworks.ru/static/generate/1689162487.7041948KGb4luBtig2n3qpsFYlfmTAswzEIPUvvTdiqGtX1ec.png'} className={'desktop:w-[500px] object-cover desktop:h-[500px] rounded-2xl'}>
-                            <source src={"/assets/videos/present.mp4"} type={"video/mp4"}/>
-                        </video>
-                        <video controls poster={'https://myneuralnetworks.ru/static/generate/1689162455.328849KQxI4hzS45QAVrsG1osePWF6U5XhkeP4nhszLwfWlRs.png'} className={'desktop:w-[500px] object-cover desktop:h-[500px] rounded-2xl'}>
-                            <source src={"/assets/videos/present.mp4"} type={"video/mp4"}/>
-                        </video>
-                        <video controls poster={'https://myneuralnetworks.ru/static/generate/1689162432.638474ZabXgv4kESrqAi3eYgtX2llJhWAa_OaG7TqpSWNnPr8.png'} className={'desktop:w-[500px] object-cover desktop:h-[500px] rounded-2xl'}>
-                            <source src={"/assets/videos/present3.mp4"} type={"video/mp4"}/>
-                        </video>
-                        <video controls poster={'https://myneuralnetworks.ru/static/generate/1689162391.4488904YC6eWSUI2uQVRtV88gugn7qxQcMtqak1YSTFSTmJ38.png'} className={'desktop:w-[500px] object-cover desktop:h-[500px] rounded-2xl'}>
-                            <source src={"/assets/videos/present4.mp4"} type={"video/mp4"}/>
-                        </video>
-                        <video controls poster={'https://myneuralnetworks.ru/static/generate/1689162355.9315138157RleXMwUml56l5DJhau2YCxEXdRqmcj4EsZC2WMvY.png'} className={'desktop:w-[500px] object-cover desktop:h-[500px] rounded-2xl'}>
-                            <source src={"/assets/videos/present5.mp4"} type={"video/mp4"} />
-                        </video>
-                    </div>
-                </div>
+                <OurWorks/>
+                <Services/>
             </div>
         </Layout>
     )
