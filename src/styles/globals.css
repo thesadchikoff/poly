@@ -6,6 +6,10 @@
   font-family: 'Graphik', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   width: 100%;
@@ -18,7 +22,8 @@ body {
 }
 
 .bg-image {
+  width: 100%;
   background-image: url("../../public/assets/front.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }

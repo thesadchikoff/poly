@@ -20,18 +20,18 @@ const Header = () => {
                 }
             </nav>
             <div>
-                <div className={'flex items-center gap-[15px] text-[12px]'}>
+                <Link href={"tel:+79202446677"} className={'flex items-center gap-[15px] text-[12px]'}>
                     <BsTelephone className={'text-[14px]'}/>
                     <span className={'font-medium'}>
                         +7 (920) 244 66 77
                     </span>
-                </div>
-                <div className={'flex items-center gap-[15px] text-[12px]'}>
+                </Link>
+                <Link href={"mailto:sevan.karapetyan.1987@mail.ru"} className={'flex items-center gap-[15px] text-[12px]'}>
                     <MdOutlineMailOutline className={'text-[14px]'}/>
                     <span className={'text-opacity-70 text-black font-semibold'}>
                         sevan.karapetyan.1987@mail.ru
                     </span>
-                </div>
+                </Link>
             </div>
         </header>
     );
