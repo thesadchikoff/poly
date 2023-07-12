@@ -28,7 +28,7 @@ export default function Home() {
                     className={'desktop:w-full m-auto px-[50px] py-[45px] mobile:w-full bg-white desktop:gap-0 mobile:gap-16 shadow-2xl mb-[150px] rounded-2xl flex items-start justify-between desktop:flex-row mobile:flex-col'}>
                     <div className={'flex flex-col gap-[17px]'}>
                         <div className={'bg-lime-600 w-max bg-opacity-20 p-[16px] rounded-[16px]'}>
-                            <Image src={check}/>
+                            <Image src={check} alt={"item icon"}/>
                         </div>
                         <span>
                               <b>Оплата по факту</b>
@@ -39,7 +39,7 @@ export default function Home() {
                     </div>
                     <div className={'flex flex-col gap-[17px]'}>
                         <div className={'bg-slate-500 bg-opacity-10 w-max p-[16px] rounded-[16px]'}>
-                            <Image src={camera}/>
+                            <Image src={camera} alt={"item icon"}/>
                         </div>
                         <span>
                               <b>Предоставляем фотоотчет</b>
@@ -50,7 +50,7 @@ export default function Home() {
                     </div>
                     <div className={'flex flex-col gap-[17px]'}>
                         <div className={'bg-amber-500 bg-opacity-10 w-max p-[16px] rounded-[16px]'}>
-                            <Image src={hammer}/>
+                            <Image src={hammer} alt={"item icon"}/>
                         </div>
                         <span>
                               <b>Уже реализовано</b>
@@ -60,7 +60,7 @@ export default function Home() {
                     </div>
                     <div className={'flex flex-col gap-[17px]'}>
                         <div className={'bg-sky-400 bg-opacity-10 w-max p-[16px] rounded-[16px]'}>
-                            <Image src={chat}/>
+                            <Image src={chat} alt={"item icon"}/>
                         </div>
                         <span>
                               <b>Прямой контакт</b>
