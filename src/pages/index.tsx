@@ -8,12 +8,18 @@ import chat from '../../public/assets/chat.svg'
 import Link from "next/link";
 import Services from "@/components/services";
 import OurWorks from "@/components/ourWorks";
+import Head from "next/head";
 
 const inter = Inter({subsets: ['latin']})
 
 export default function Home() {
     return (
         <Layout>
+            <Head>
+                <title>
+                    Полусухая стяжка пола
+                </title>
+            </Head>
             <div className={'w-full h-full flex flex-col'}>
                 <div
                     id={'section-0'}
