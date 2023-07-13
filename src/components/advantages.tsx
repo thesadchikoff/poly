@@ -17,7 +17,7 @@ const Advantages = () => {
                     loading={"lazy"}
                     fill alt={'#'}/>
                 <div
-                    className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-16 mobile:gap-2'}>
+                    className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-5 mobile:gap-2'}>
                     <h1 className={'text-slate-800 font-medium text-xl'}>Скорость работ и высыхания</h1>
                     <hr/>
                     <span className="text-black text-opacity-40 text-[15px] font-medium">Ходить по стяжке можно через сутки.
@@ -32,7 +32,7 @@ const Advantages = () => {
                     loading={"lazy"}
                     fill alt={'#'}/>
                 <div
-                    className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-16 mobile:gap-2'}>
+                    className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-5 mobile:gap-2'}>
                     <h1 className={'text-slate-800 font-medium text-xl'}>Отсутствие влажных процессов</h1>
                     <hr/>
                     <span className="text-black text-opacity-40 text-[15px] font-medium">Благодаря этому, полусухая стяжка значительно сокращает время высыхания и готовности поверхности к дальнейшим работам. Более того, минимизация влажных процессов способствует уменьшению вероятности появления трещин и других повреждений на полу</span>
@@ -45,7 +45,7 @@ const Advantages = () => {
                     loading={"lazy"}
                     fill alt={'#'}/>
                 <div
-                    className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-16 mobile:gap-2'}>
+                    className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-5 mobile:gap-2'}>
                     <h1 className={'text-slate-800 font-medium text-xl'}>Не требуется финишное выравнивание</h1>
                     <hr/>
                     <span className="text-black text-opacity-40 text-[15px] font-medium">Это значит, что можно сэкономить не только время и усилия, но и деньги на этапе последней отделки. Теперь процесс укладки нового покрытия станет еще более простым и быстрым. Избавьтесь от лишних хлопот и сделайте свой дом еще более уютным!</span>
@@ -58,7 +58,7 @@ const Advantages = () => {
                     loading={"lazy"}
                     fill alt={'#'}/>
                 <div
-                    className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-16 mobile:gap-2'}>
+                    className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-5 mobile:gap-2'}>
                     <h1 className={'text-slate-800 font-medium text-xl'}>Стоимость ниже аналогов</h1>
                     <hr/>
                     <span className="text-black text-opacity-40 text-[15px] font-medium">
@@ -72,7 +72,7 @@ const Advantages = () => {
                     loading={"lazy"}
                     fill alt={'#'}/>
                 <div
-                    className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-16 mobile:gap-2'}>
+                    className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-5 mobile:gap-2'}>
                     <h1 className={'text-slate-800 font-medium text-xl'}>Экологически чистая</h1>
                     <hr/>
                     <span className="text-black text-opacity-40 text-[15px] font-medium">Основным преимуществом этого материала является его экологическая чистота. Он не содержит вредных химических добавок и увлажняющих компонентов</span>
