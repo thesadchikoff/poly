@@ -32,7 +32,7 @@ const Services = () => {
                     </p>
                     <button onClick={handleOpen} className={'px-[25px] py-[15px] bg-amber-500 w-max text-white text-xl font-semibold'}>Обсудить проект</button>
                     <Modal
-                        className={'flex items-center justify-center'}
+                        className={'flex items-center justify-center p-[15px]'}
                         open={open}
                         onClose={handleClose}
                         aria-labelledby="modal-modal-title"

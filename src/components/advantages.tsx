@@ -4,7 +4,7 @@ import Image from "next/image";
 const Advantages = () => {
     return (
         <div
-            className={'w-full desktop:h-screen mobile:h-max mobile:px-[15px] desktop:px-[130px] mobile:py-[30px] desktop:py-[80px] gap-2 desktop:grid desktop:grid-cols-3 desktop:grid-rows-2 mobile:grid mobile:grid-rows-6 mobile:grid-cols-1'}>
+            className={'w-full desktop:h-screen mobile:h-[2000px] mobile:px-[15px] desktop:px-[130px] mobile:py-[30px] desktop:py-[80px] gap-2 desktop:grid desktop:grid-cols-3 desktop:grid-rows-2 mobile:grid mobile:grid-rows-6 mobile:grid-cols-1'}>
             <div className={'p-5'}>
                 <span className="text-center text-black text-opacity-40 text-[15px] font-normal">advantages</span>
                 <div><span className="text-amber-500 text-[35px] font-black">/</span><span
