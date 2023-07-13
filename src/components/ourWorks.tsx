@@ -3,11 +3,12 @@ import React from 'react';
 const OurWorks = () => {
     return (
         <div id={'our-works'} className={'w-full h-full flex flex-col gap-10'}>
-            <div className={'flex justify-center items-center flex-col'}>
-                <h1 className="text-black text-3xl font-medium">Выполнение работ</h1>
-                <span className="text-black text-opacity-50 text-xl font-medium">нашей компанией</span>
+            <div className={'flex justify-center items-start flex-col mobile:px-[15px] desktop:px-[130px] tablet:px-[15px]'}>
+                <span className="text-center text-black text-opacity-60 text-[15px] font-normal">accomplishment</span>
+                    <div><span className="text-amber-500 text-[35px] font-black">/</span><span
+                        className="text-[35px] font-semibold text-black">Выполнение работ</span></div>
             </div>
-            <div className={'p-[15px] flex items-center flex-wrap gap-10 justify-center'}>
+            <div className={'p-[15px] mobile:grid mobile:grid-cols-1 tablet:grid tablet:grid-cols-2 desktop:flex desktop:items-center desktop:flex-wrap gap-10 desktop:justify-center'}>
                 <video controls poster={'https://myneuralnetworks.ru/static/generate/1689162487.7041948KGb4luBtig2n3qpsFYlfmTAswzEIPUvvTdiqGtX1ec.png'} className={'w-[500px] object-cover h-[500px] rounded-2xl'}>
                     <source src={"/assets/videos/present.mp4"} type={"video/mp4"}/>
                 </video>

@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <div>
-            <footer className={'flex justify-between bg-slate-700 px-[15px] desktop:h-[70px] mobile:py-[25px] w-full items-center flex-grow-0'}>
+            <footer className={'flex justify-between bg-[#212121] px-[15px] desktop:h-[70px] mobile:py-[25px] w-full items-center flex-grow-0'}>
                 <span className={'font-bold text-white uppercase'}>{config.siteName}</span>
                 <div className={'text-white'}>
                     &copy; 2021-{new Date().getFullYear()}

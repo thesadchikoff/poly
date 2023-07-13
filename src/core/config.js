@@ -6,15 +6,16 @@ const config = {
             url: '#our-works'
         },
         {
-            label: 'Портфолио',
-            url: '#section-0'
-        },{
-            label: 'Отзывы',
-            url: '/reviews'
+            label: 'Оформить заказ',
+            url: '#services'
         },
         {
-            label: 'Оформить заказ',
-            url: '/order'
+            label: 'Преимущества',
+            url: '#advantages'
+        },
+        {
+            label: 'Портфолио',
+            url: '#section-0'
         },
         {
             label: 'Контакты',

@@ -9,7 +9,7 @@ const Services = () => {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     return (
-        <div className={"services mobile:h-max desktop:h-screen"}>
+        <div id={"services"} className={"services mobile:h-max desktop:h-screen"}>
             <div className={'w-full mobile:h-max desktop:h-full bg-black bg-opacity-70 mobile:px-[15px] desktop:px-[130px] mobile:py-[30px] desktop:py-[80px] flex flex-col mobile:gap-[60px] desktop:gap-[160px]'}>
                 {/*  Services title start  */}
                 <div>
