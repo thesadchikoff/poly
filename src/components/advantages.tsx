@@ -12,7 +12,8 @@ const Advantages = () => {
             </div>
             <div className={'relative img__wrap'}>
                 <Image
-                    src={'https://myneuralnetworks.ru/static/generate/1689172524.5586162ThdQ1ootSWAyJLbf7HhwDBfMNLUHLqB1yIX0IsVjlAo.png'}
+                    src={'/assets/step_1.png'}
+                    loading={"lazy"}
                     fill alt={'#'}/>
                 <div
                     className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-16 mobile:gap-2'}>
@@ -26,7 +27,8 @@ const Advantages = () => {
             </div>
             <div className={'relative img__wrap'}>
                 <Image
-                    src={'https://myneuralnetworks.ru/static/generate/1689173425.70898724qyEtJxn5Tbe9E9oBqwIFNOXc8ZKTn78x1svpbvUJ8.png'}
+                    src={'/assets/step_2.png'}
+                    loading={"lazy"}
                     fill alt={'#'}/>
                 <div
                     className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-16 mobile:gap-2'}>
@@ -38,7 +40,8 @@ const Advantages = () => {
             </div>
             <div className={'relative img__wrap'}>
                 <Image
-                    src={'https://myneuralnetworks.ru/static/generate/1689173625.4041846a6V07yFR6nPeuhukyi78JRJYf2qK14_64XNpDb8pyVs.png'}
+                    src={'/assets/step_3.png'}
+                    loading={"lazy"}
                     fill alt={'#'}/>
                 <div
                     className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-16 mobile:gap-2'}>
@@ -50,7 +53,8 @@ const Advantages = () => {
             </div>
             <div className={'relative img__wrap'}>
                 <Image
-                    src={'https://myneuralnetworks.ru/static/generate/1689173899.2042341B_6kC7i1I8IzeVQ3vwlDqr9s0wbVqbDlC6rZqJMDg.png'}
+                    src={'/assets/step_4.png'}
+                    loading={"lazy"}
                     fill alt={'#'}/>
                 <div
                     className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-16 mobile:gap-2'}>
@@ -63,7 +67,8 @@ const Advantages = () => {
             </div>
             <div className={'relative img__wrap'}>
                 <Image
-                    src={'https://myneuralnetworks.ru/static/generate/1689173685.583629lTjYo9EsG8kiqGMxVerfeMtUSV_Wa1JgYslygSjLTxw.png'}
+                    src={'/assets/step_5.png'}
+                    loading={"lazy"}
                     fill alt={'#'}/>
                 <div
                     className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-16 mobile:gap-2'}>
