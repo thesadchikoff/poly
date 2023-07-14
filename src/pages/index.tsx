@@ -8,6 +8,7 @@ import Works from "@/components/works";
 import 'react-phone-number-input/style.css'
 import React, {useState} from "react";
 import Activity from "@/components/activity";
+// @ts-ignore
 import InputMask from 'react-input-mask';
 import {BsTelephone} from 'react-icons/bs'
 import {AiOutlineUser, AiOutlineMessage} from 'react-icons/ai'
@@ -51,12 +52,12 @@ export default function Home() {
                                         mask='+7 (999) 999 99 99'
                                         value={value}
                                         placeholder={'Ваш номер телефона'}
-                                        onChange={(e) => setValue(e.target.value)}>
+                                        onChange={(e: any) => setValue(e.target.value)}>
                                     </InputMask>
                                 </div>
                                 <div className={'flex items-start gap-4 border-2 border-amber-500 w-full p-5'}>
                                     <AiOutlineMessage className={'text-white text-2xl'}/>
-                                    <textarea placeholder={'Ваше сообщение'} className={'bg-transparent text-white border-0 outline-0 w-full h-full'} name="" id="" cols="30" rows="10"></textarea>
+                                    <textarea placeholder={'Ваше сообщение'} className={'bg-transparent text-white border-0 outline-0 w-full h-full'} name="" id="" cols={30} rows={10}></textarea>
                                 </div>
                                 <button className={'px-[55px] py-[15px] bg-amber-500 w-max text-white text-xl font-semibold hover:bg-amber-400 transition-all delay-150 active:bg-amber-600 active:transition-none active:delay-0'}>Отправить</button>
                             </div>
@@ -82,7 +83,7 @@ export default function Home() {
                                     Оказание услуг по полусухой стяжке пола по Липецку и Липецкой области.
                                     <br/>
                                     <br/>
-                                    Заполняя форму и нажимая на кнопку "Отправить" вы принимаете условия пользовательского соглашения
+                                    Заполняя форму и нажимая на кнопку &quot;Отправить&quot; вы принимаете условия пользовательского соглашения
                                 </p>
                                 <hr className={'opacity-30'}/>
                                 <Link className={'text-amber-500 underline hover:text-amber-300'} href={"#"}>Политика конфиденциальности</Link>
