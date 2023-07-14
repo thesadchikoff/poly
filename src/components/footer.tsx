@@ -1,7 +1,8 @@
 import React from 'react';
 import config from "@/core/config";
 import Link from "next/link";
-import {AiOutlineWhatsApp, AiOutlineMail} from 'react-icons/ai'
+import {AiOutlineWhatsApp} from 'react-icons/ai'
+import {HiOutlineMail} from 'react-icons/hi'
 
 
 const Footer = () => {
@@ -14,12 +15,12 @@ const Footer = () => {
                 <div className="wave" id="wave4"></div>
             </div>
             <ul className="social-icon">
-                <li className="social-icon__item"><a className="social-icon__link" href="#">
+                <li className="social-icon__item"><Link  className="social-icon__link" href={'https://api.whatsapp.com/send/?phone=79202446677&text=Здравствуйте!+Хотел+бы+обсудить+с+вами+проект'} target={"_blank"}>
                     <AiOutlineWhatsApp/>
-                </a></li>
-                <li className="social-icon__item"><a className="social-icon__link" href="#">
-                    <AiOutlineMail/>
-                </a></li>
+                </Link></li>
+                <li className="social-icon__item"><Link className="social-icon__link" href={"mailto:sevan.karapetyan.1987@mail.ru"} target={"_blank"}>
+                    <HiOutlineMail/>
+                </Link></li>
             </ul>
             <ul className="menu">
                 {
