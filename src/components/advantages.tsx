@@ -13,7 +13,7 @@ const Advantages = () => {
             </div>
             <div className={'relative img__wrap tablet:h-[300px] desktop:h-full'}>
                 <Image
-                    src={'/assets/step_1.png'}
+                    src={'/assets/step_1.jpg'}
                     loading={"lazy"}
                     fill alt={'#'}/>
                 <div
@@ -29,7 +29,7 @@ const Advantages = () => {
             </div>
             <div className={'relative img__wrap'}>
                 <Image
-                    src={'/assets/step_2.png'}
+                    src={'/assets/step_2.jpg'}
                     loading={"lazy"}
                     fill alt={'#'}/>
                 <div
@@ -42,7 +42,7 @@ const Advantages = () => {
             </div>
             <div className={'relative img__wrap'}>
                 <Image
-                    src={'/assets/step_3.png'}
+                    src={'/assets/step_3.jpg'}
                     loading={"lazy"}
                     fill alt={'#'}/>
                 <div
@@ -55,7 +55,7 @@ const Advantages = () => {
             </div>
             <div className={'relative img__wrap'}>
                 <Image
-                    src={'/assets/step_4.png'}
+                    src={'/assets/step_4.jpeg'}
                     loading={"lazy"}
                     fill alt={'#'}/>
                 <div
@@ -69,7 +69,7 @@ const Advantages = () => {
             </div>
             <div className={'relative img__wrap'}>
                 <Image
-                    src={'/assets/step_5.png'}
+                    src={'/assets/step_5.jpg'}
                     loading={"lazy"}
                     fill alt={'#'}/>
                 <div
