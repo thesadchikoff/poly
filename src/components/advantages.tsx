@@ -55,7 +55,7 @@ const Advantages = () => {
             </div>
             <div className={'relative img__wrap'}>
                 <Image
-                    src={'/assets/step_4.jpeg'}
+                    src={'/assets/step_4.jpg'}
                     loading={"lazy"}
                     fill alt={'#'}/>
                 <div
