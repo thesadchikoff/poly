@@ -20,12 +20,12 @@ const Contacts = () => {
                     <div className={'tablet:w-full h-full desktop:w-1/2 mobile:w-full flex flex-col gap-14'}>
                         <div className={'flex items-center gap-4 border-2 border-amber-500 w-full p-5'}>
                             <AiOutlineUser className={'text-white text-xl'}/>
-                            <input className={'bg-transparent text-white border-0 outline-0 w-full h-full'} type="text" placeholder={'Ваше имя'}/>
+                            <input className={'bg-transparent focus:outline-0 focus:border-0 text-white border-0 outline-0 w-full h-full'} type="text" placeholder={'Ваше имя'}/>
                         </div>
                         <div className={'flex items-center gap-4 border-2 border-amber-500 w-full p-5'}>
                             <BsTelephone className={'text-white text-xl'}/>
                             <InputMask
-                                className={'bg-transparent text-white border-0 outline-0 w-full h-full'}
+                                className={'bg-transparent focus:outline-0 focus:border-0 text-white border-0 outline-0 w-full h-full'}
                                 mask='+7 (999) 999 99 99'
                                 value={value}
                                 placeholder={'Ваш номер телефона'}
@@ -34,7 +34,7 @@ const Contacts = () => {
                         </div>
                         <div className={'flex items-start gap-4 border-2 border-amber-500 w-full p-5'}>
                             <AiOutlineMessage className={'text-white text-2xl'}/>
-                            <textarea placeholder={'Ваше сообщение'} className={'bg-transparent text-white border-0 outline-0 w-full h-full'} name="" id="" cols={30} rows={10}></textarea>
+                            <textarea placeholder={'Ваше сообщение'} className={'bg-transparent text-white focus:outline-0 focus:border-0 border-0 outline-0 w-full h-full'} name="" id="" cols={30} rows={10}></textarea>
                         </div>
                         <button className={'px-[55px] py-[15px] bg-amber-500 w-max text-white text-xl font-semibold hover:bg-amber-400 transition-all delay-150 active:bg-amber-600 active:transition-none active:delay-0'}>Отправить</button>
                     </div>
