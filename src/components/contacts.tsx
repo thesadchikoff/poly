@@ -6,6 +6,7 @@ import Link from "next/link";
 // @ts-ignore
 import InputMask from "react-input-mask";
 import {message} from "antd";
+import {MessageType} from "antd/lib/message/interface";
 interface ISubmit {
     name: string
     phoneNumber: string
@@ -15,13 +16,13 @@ const Contacts = () => {
     const [name, setName] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
     const [subject, setSubject] = useState('')
-    const submitForm = (clientName, phone, sub) => {
+    const submitForm = (clientName: string, phone: string, sub: string): MessageType => {
         if (clientName === "" || phone === "" || sub === "") {
             return message.error("Заполните все поля формы")
         }
         return message.warning("Отправка формы отключена")
     }
-    const showAlert = (isForm) => {
+    const showAlert = (isForm: boolean): MessageType => {
         if (isForm) {
             return message.warning('Отправка формы отключена')
         }
