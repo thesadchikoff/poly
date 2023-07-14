@@ -11,7 +11,7 @@ const Advantages = () => {
                 <div><span className="text-amber-500 text-[35px] font-black">/</span><span
                     className="text-black text-[35px] font-semibold">Почему <br/> стоит заказать у нас</span></div>
             </div>
-            <div className={'relative img__wrap'}>
+            <div className={'relative img__wrap tablet:h-[300px] desktop:h-full'}>
                 <Image
                     src={'/assets/step_1.png'}
                     loading={"lazy"}
@@ -20,10 +20,11 @@ const Advantages = () => {
                     className={'img__description p-5 absolute top-0 left-0 bottom-0 right-0 bg-white flex flex-col desktop:gap-5 mobile:gap-2'}>
                     <h1 className={'text-slate-800 font-medium text-xl'}>Скорость работ и высыхания</h1>
                     <hr/>
-                    <span className="text-black text-opacity-40 text-[15px] font-medium">Ходить по стяжке можно через сутки.
+                    <span className="text-black text-opacity-40 text-[15px] font-medium">
+                        Ходить по стяжке можно через сутки.
 Плитку можно укладывать через двое суток.
-Ламинат, паркет после полной просушки стяжки - примерно через 28 дней</span>
-
+Ламинат, паркет после полной просушки стяжки - примерно через 28 дней
+                    </span>
                 </div>
             </div>
             <div className={'relative img__wrap'}>

@@ -5,13 +5,19 @@ import OurWorks from "@/components/ourWorks";
 import Head from "next/head";
 import Advantages from "@/components/advantages";
 import Works from "@/components/works";
-import { Image } from 'antd';
-import config from "@/core/config";
-import React from "react";
+import 'react-phone-number-input/style.css'
+import React, {useState} from "react";
+import Activity from "@/components/activity";
+import InputMask from 'react-input-mask';
+import {BsTelephone} from 'react-icons/bs'
+import {AiOutlineUser, AiOutlineMessage} from 'react-icons/ai'
+import {MdOutlineMailOutline} from "react-icons/md";
+import Link from "next/link";
+
 const inter = Inter({subsets: ['latin']})
 
 export default function Home() {
-
+    const [value, setValue] = useState('')
     return (
         <Layout>
             <Head>
@@ -24,26 +30,64 @@ export default function Home() {
                 <OurWorks/>
                 <Services/>
                 <Advantages/>
-                <div className={'w-full mobile:py-[30px] desktop:py-[80px] flex flex-col items-center justify-center'}>
-                    <div className={'w-full flex items-center justify-center'}>
-                        <div className={'h-max grid gap-2 desktop:grid-cols-5 desktop:grid-rows-4 mobile:grid-cols-1'}>
-                            <div className={'p-5 w-[325px] h-[325px]'}>
-                                <span className="text-center text-black text-opacity-40 text-[15px] font-normal">activity</span>
-                                <div><span className="text-amber-500 text-[35px] font-black">/</span><span
-                                    className="text-black text-[35px] font-semibold">Результат,<br/>которым мы гордимся!</span></div>
+                <Activity/>
+                <div id={"contacts"} className={' bg-[url("https://images.unsplash.com/photo-1586184476769-e0f74836ea4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80")] bg-cover bg-no-repeat w-full desktop:h-screen'}>
+                    <div className={'w-full h-full bg-black bg-opacity-70 mobile:px-[15px] desktop:px-[130px] mobile:py-[30px] desktop:py-[80px] flex flex-col mobile:gap-[60px] desktop:gap-[100px]'}>
+                        <div>
+                            <span className="text-center text-white text-opacity-60 text-[15px] font-normal">contacts</span>
+                            <div><span className="text-amber-500 text-[35px] font-black">/</span><span
+                                className="text-white text-[35px] font-semibold"> Связь с нами</span></div>
+                        </div>
+                        <div className={'w-full h-full flex mobile:flex-col-reverse desktop:flex-row tablet:flex-col-reverse desktop:gap-4 tablet:gap-10 mobile:gap-16'}>
+                            <div className={'tablet:w-full h-full desktop:w-1/2 mobile:w-full flex flex-col gap-14'}>
+                                <div className={'flex items-center gap-4 border-2 border-amber-500 w-full p-5'}>
+                                    <AiOutlineUser className={'text-white text-xl'}/>
+                                    <input className={'bg-transparent text-white border-0 outline-0 w-full h-full'} type="text" placeholder={'Ваше имя'}/>
+                                </div>
+                                <div className={'flex items-center gap-4 border-2 border-amber-500 w-full p-5'}>
+                                    <BsTelephone className={'text-white text-xl'}/>
+                                    <InputMask
+                                        className={'bg-transparent text-white border-0 outline-0 w-full h-full'}
+                                        mask='+7 (999) 999 99 99'
+                                        value={value}
+                                        placeholder={'Ваш номер телефона'}
+                                        onChange={(e) => setValue(e.target.value)}>
+                                    </InputMask>
+                                </div>
+                                <div className={'flex items-start gap-4 border-2 border-amber-500 w-full p-5'}>
+                                    <AiOutlineMessage className={'text-white text-2xl'}/>
+                                    <textarea placeholder={'Ваше сообщение'} className={'bg-transparent text-white border-0 outline-0 w-full h-full'} name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <button className={'px-[55px] py-[15px] bg-amber-500 w-max text-white text-xl font-semibold hover:bg-amber-400 transition-all delay-150 active:bg-amber-600 active:transition-none active:delay-0'}>Отправить</button>
                             </div>
-                            {
-                                config.photoSet.map(photo => {
-                                    return (
-                                        <Image
-                                            width={325}
-                                            height={325}
-                                            key={photo.id}
-                                            src={photo.source}
-                                        />
-                                    )
-                                })
-                            }
+                            <div className={'bg-black bg-opacity-70 p-5 h-full tablet:w-full text-white desktop:w-1/2 mobile:w-full flex flex-col gap-14'}>
+                                    <h1 className={'tablet:text-4xl mobile:text-2xl font-semibold'}>Контактная информация</h1>
+                                <hr className={'opacity-30'}/>
+                                <div className={'flex flex-col gap-5'}>
+                                    <div className={'w-full flex items-center gap-4 opacity70'}>
+                                        <MdOutlineMailOutline className={'tablet:text-2xl mobile:text-xl'}/>
+                                        <span className={'tablet:text-xl mobile:text-[16px]'}>
+                                        sevan.karapetyan.1987@mail.ru
+                                    </span>
+                                    </div>
+                                    <div className={'flex items-center gap-4 opacity70'}>
+                                        <BsTelephone className={'tablet:text-2xl mobile:text-xl'}/>
+                                        <span className={'tablet:text-xl mobile:text-[16px]'}>
+                                        +7 (920) 244 66 77
+                                    </span>
+                                    </div>
+                                </div>
+                                <hr className={'opacity-30'}/>
+                                <p>
+                                    Оказание услуг по полусухой стяжке пола по Липецку и Липецкой области.
+                                    <br/>
+                                    <br/>
+                                    Заполняя форму и нажимая на кнопку "Отправить" вы принимаете условия пользовательского соглашения
+                                </p>
+                                <hr className={'opacity-30'}/>
+                                <Link className={'text-amber-500 underline hover:text-amber-300'} href={"#"}>Политика конфиденциальности</Link>
+
+                            </div>
                         </div>
                     </div>
                 </div>

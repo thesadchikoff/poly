@@ -15,11 +15,11 @@ const config = {
         },
         {
             label: 'Портфолио',
-            url: '#section-0'
+            url: '#activity'
         },
         {
             label: 'Контакты',
-            url: '/contacts'
+            url: '#contacts'
         }
     ],
     photoSet: [

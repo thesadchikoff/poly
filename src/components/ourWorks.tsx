@@ -13,7 +13,7 @@ const OurWorks = () => {
                     <source src={"/assets/videos/present.mp4"} type={"video/mp4"}/>
                 </video>
                 <video controls poster={'https://myneuralnetworks.ru/static/generate/1689162455.328849KQxI4hzS45QAVrsG1osePWF6U5XhkeP4nhszLwfWlRs.png'} className={'w-[500px] object-cover h-[500px] rounded-2xl'}>
-                    <source src={"/assets/videos/present.mp4"} type={"video/mp4"}/>
+                    <source src={"/assets/videos/present2.mp4"} type={"video/mp4"}/>
                 </video>
                 <video controls poster={'https://myneuralnetworks.ru/static/generate/1689162432.638474ZabXgv4kESrqAi3eYgtX2llJhWAa_OaG7TqpSWNnPr8.png'} className={'w-[500px] object-cover h-[500px] rounded-2xl'}>
                     <source src={"/assets/videos/present3.mp4"} type={"video/mp4"}/>
