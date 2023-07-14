@@ -32,7 +32,7 @@ const Activity = () => {
                         })
                     }
                 </div>
-                <button onClick={() => setShowMore(true)} className={`${showMore ? 'hidden' : 'block'} px-[55px] py-[15px] bg-amber-500 w-max text-white text-xl font-semibold hover:bg-amber-400 transition-all delay-150 active:bg-amber-600 active:transition-none active:delay-0`}>Показать больше</button>
+                <button onClick={() => setShowMore(true)} className={`${showMore ? 'hidden' : 'block'} px-[55px] py-[15px] bg-amber-500 w-max text-white text-xl font-semibold hover:bg-amber-400 transition-all delay-150 active:bg-amber-600 active:transition-none active:delay-0`}>Показать все</button>
                 <Link href={'#activity'} onClick={() => setShowMore(false)} className={`${showMore ? 'block' : 'hidden'} px-[55px] py-[15px] bg-amber-500 w-max text-white text-xl font-semibold hover:bg-amber-400 transition-all delay-150 active:bg-amber-600 active:transition-none active:delay-0`}>Скрыть</Link>
             </div>
         </div>
